@@ -156,7 +156,8 @@ def iniciar_socket():
 
     # se enlaza a la direcccion IP, con el puerto especificado
     #el metodo bind recibe una tupla(similar a un arreglo [], pero con PARENTESIS () *IMPORTANTE*)
-    s.bind(("192.168.1.66", 8102))
+    ip_aux = input('ingrese la direeción IP')
+    s.bind((ip_aux, 8102))
 
     return s
 
